@@ -32,7 +32,12 @@ const Navbar = () => {
         <div className="hidden md:flex items-center">
           <ul className="flex">
             {Links.map(({ id, link }) => (
-              <li key={id} className="p-4 uppercase">{link}</li>
+              <li
+                key={id}
+                className="p-4 uppercase duration-200 hover:text-thBlue cursor-pointer"
+              >
+                {link}
+              </li>
             ))}
           </ul>
         </div>
