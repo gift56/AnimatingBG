@@ -2,9 +2,9 @@ import React from 'react'
 
 const Esign = () => {
   return (
-    <div className='"h1"'>
+    <h1 className='btn btn-primary'>
       ESign
-    </div>
+    </h1>
   )
 }
 
