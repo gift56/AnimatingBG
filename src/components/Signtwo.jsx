@@ -6,11 +6,28 @@ const Signtwo = () => {
     border: "0.0625rem solid #9c9c9c",
     borderRadius: "0.25rem",
     width: "600px",
-    height:"370px"
+    height: "370px",
   };
   const canvas = createRef();
 
   const [image, setImage] = useState();
+
+  const Save = () => {
+    canvas.current
+      .exportImage("png")
+      .then((data) => {
+        console.log(data);
+        setImage(data);
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  };
+
+  const Clear = () => {
+    canvas.current.clearCanvas();
+    setImage();
+  };
 
   return (
     <div className="d-flex flex-column gap-4 align-items-center justify-content-center">
@@ -22,35 +39,16 @@ const Signtwo = () => {
         className="mt-4"
       />
       <div className="d-flex align-items-center">
-        <button
-          className="m-1 btn btn-primary px-5"
-          onClick={() => {
-            console.log(canvas);
-            canvas.current
-              .exportImage("png")
-              .then((data) => {
-                console.log(data);
-                setImage(data);
-              })
-              .catch((e) => {
-                console.log(e);
-              });
-          }}
-        >
+        <button className="m-1 btn btn-primary px-5" onClick={Save}>
           Get Image
         </button>
-        <button
-          className="m-1 btn btn-danger px-5"
-          onClick={() => {
-            canvas.current.clearCanvas();
-          }}
-        >
+        <button className="m-1 btn btn-danger px-5" onClick={Clear}>
           Clear Image
         </button>
       </div>
       <img
         src={image}
-        style={{ width: "300px", aspectRatio: "1/1", border:"1px solid gray" }}
+        style={{ width: "300px", aspectRatio: "1/1", border: "1px solid gray" }}
       />
     </div>
   );

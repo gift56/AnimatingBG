@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { Signature, SignatureComponent } from "@syncfusion/ej2-react-inputs";
 import { ButtonComponent } from "@syncfusion/ej2-react-buttons";
 
 const Esign = () => {
-  const [image, setImage] = useState();
   let signObj = Signature | null;
 
   const OnSave = () => {
