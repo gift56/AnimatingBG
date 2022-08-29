@@ -44,8 +44,11 @@ const Navbar = ({ menuShow, setMenuShow }) => {
           </ul>
           <GradientBtn title="get anton" className="ml-4 capitalize" />
         </div>
-        <div className="block lg:hidden">
-          
+        <div
+          onClick={() => setMenuShow((prev) => !prev)}
+          className="block lg:hidden"
+        >
+          {menuShow ? <FaTimes size={30} /> : <FaBars size={30} />}
         </div>
       </div>
     </div>
