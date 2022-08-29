@@ -1,10 +1,12 @@
 import React from "react";
 import Esign from "./components/Esign";
+import Signtwo from "./components/Signtwo";
 
 const App = () => {
   return (
     <div>
-      <Esign />
+      {/* <Esign /> */}
+      <Signtwo />
     </div>
   );
 };
