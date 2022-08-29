@@ -31,8 +31,8 @@ const Navbar = () => {
         </div>
         <div className="hidden md:flex items-center">
           <ul className="flex">
-            {Links.map((item) => (
-              <li key={item.id}>{item.link}</li>
+            {Links.map(({ id, link }) => (
+              <li key={id} className="p-4 uppercase">{link}</li>
             ))}
           </ul>
         </div>
