@@ -2,7 +2,7 @@ import React from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import GradientBtn from "./GradientBtn";
 
-const Navbar = () => {
+const Navbar = ({ menuShow, setMenuShow }) => {
   const Links = [
     {
       id: 1,
@@ -45,7 +45,7 @@ const Navbar = () => {
           <GradientBtn title="get anton" className="ml-4 capitalize" />
         </div>
         <div className="block lg:hidden">
-          <FaBars />
+          
         </div>
       </div>
     </div>

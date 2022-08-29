@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 
 const App = () => {
+  const [menuShow, setMenuShow] = useState(false);
   return (
     <div>
-      <Navbar />
+      <Navbar menuShow={menuShow} setMenuShow={setMenuShow} />
     </div>
   );
 };
