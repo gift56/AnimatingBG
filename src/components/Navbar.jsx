@@ -1,4 +1,5 @@
 import React from "react";
+import GradientBtn from "./GradientBtn";
 
 const Navbar = () => {
   const Links = [
@@ -40,6 +41,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+          <GradientBtn />
         </div>
       </div>
     </div>
