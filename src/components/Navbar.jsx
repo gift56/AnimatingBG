@@ -1,4 +1,5 @@
 import React from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import GradientBtn from "./GradientBtn";
 
 const Navbar = () => {
@@ -41,7 +42,10 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <GradientBtn  title="get anton" className="ml-4 capitalize"/>
+          <GradientBtn title="get anton" className="ml-4 capitalize" />
+        </div>
+        <div>
+          
         </div>
       </div>
     </div>
