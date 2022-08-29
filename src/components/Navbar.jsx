@@ -41,7 +41,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <GradientBtn  title="get anton"/>
+          <GradientBtn  title="get anton" className="ml-4 capitalize"/>
         </div>
       </div>
     </div>
