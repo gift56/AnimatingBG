@@ -53,11 +53,22 @@ const Navbar = ({ menuShow, setMenuShow }) => {
           </div>
         </div>
       </div>
-      <div className={`w-full bg-black text-white z-10`}>
+      <div
+        className={`w-full bg-black text-white absolute z-10 h-fit py-12 lg:hidden flex justify-center text-center text-2xl duration-500 ${
+          menuShow ? "top-24 rounded-b-2xl opacity-95" : "top-[-100%]"
+        }`}
+      >
         <ul>
           {Links.map(({ id, link }) => (
-            <li key={id}>{link}</li>
+            <li
+              key={id}
+              className={`${id === 1 ? "" : "mt-4"} uppercase`}
+              onClick={() => setMenuShow((prev) => !prev)}
+            >
+              {link}
+            </li>
           ))}
+          <GradientBtn title="get anton" className="mt-10 capitalize" />
         </ul>
       </div>
     </>

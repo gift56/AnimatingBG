@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 
 const App = () => {
@@ -6,6 +7,7 @@ const App = () => {
   return (
     <div>
       <Navbar menuShow={menuShow} setMenuShow={setMenuShow} />
+      <Hero menuShow={menuShow}/>
     </div>
   );
 };
