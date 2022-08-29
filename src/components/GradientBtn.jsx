@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const GradientBtn = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+const GradientBtn = ({ title, classNames }) => {
+  return <button>{title}</button>;
+};
 
-export default GradientBtn
+export default GradientBtn;

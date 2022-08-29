@@ -41,7 +41,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <GradientBtn />
+          <GradientBtn  title="get anton"/>
         </div>
       </div>
     </div>
