@@ -31,12 +31,12 @@ const Navbar = () => {
         <div>
           <h1 className="text-thBlue tracking-widest text-3xl">ANTON</h1>
         </div>
-        <div className="hidden md:flex items-center">
+        <div className="hidden lg:flex items-center">
           <ul className="flex">
             {Links.map(({ id, link }) => (
               <li
                 key={id}
-                className="p-4 uppercase duration-200 hover:text-thBlue cursor-pointer"
+                className="uppercase duration-200 hover:text-thBlue cursor-pointer lg:p-2 xl:p-4"
               >
                 {link}
               </li>
@@ -44,8 +44,8 @@ const Navbar = () => {
           </ul>
           <GradientBtn title="get anton" className="ml-4 capitalize" />
         </div>
-        <div>
-          
+        <div className="block lg:hidden">
+          <FaBars />
         </div>
       </div>
     </div>
