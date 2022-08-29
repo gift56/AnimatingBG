@@ -12,7 +12,7 @@ const Signtwo = () => {
 
   const [image, setImage] = useState();
 
-  const Save = () => {
+  const Success = () => {
     canvas.current
       .exportImage("png")
       .then((data) => {
@@ -24,7 +24,7 @@ const Signtwo = () => {
       });
   };
 
-  const Clear = () => {
+  const Remove = () => {
     canvas.current.clearCanvas();
     setImage();
   };
@@ -39,17 +39,24 @@ const Signtwo = () => {
         className="mt-4"
       />
       <div className="d-flex align-items-center">
-        <button className="m-1 btn btn-primary px-5" onClick={Save}>
+        <button className="m-1 btn btn-primary px-5" onClick={Success}>
           Get Image
         </button>
-        <button className="m-1 btn btn-danger px-5" onClick={Clear}>
+        <button className="m-1 btn btn-danger px-5" onClick={Remove}>
           Clear Image
         </button>
       </div>
-      <img
-        src={image}
-        style={{ width: "300px", aspectRatio: "1/1", border: "1px solid gray" }}
-      />
+      {image && (
+        <img
+          src={image}
+          style={{
+            width: "300px",
+            aspectRatio: "1/1",
+            border: "1px solid gray",
+          }}
+          alt="solid"
+        />
+      )}
     </div>
   );
 };
