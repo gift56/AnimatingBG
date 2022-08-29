@@ -4,23 +4,23 @@ const Navbar = () => {
   const Links = [
     {
       id: 1,
-      link:"home"
+      link: "home",
     },
     {
       id: 2,
-      link:"products"
+      link: "products",
     },
     {
       id: 3,
-      link:"developer api"
+      link: "developer api",
     },
     {
       id: 4,
-      link:"customers"
+      link: "customers",
     },
     {
       id: 5,
-      link:"contact"
+      link: "contact",
     },
   ];
   return (
@@ -30,7 +30,11 @@ const Navbar = () => {
           <h1 className="text-thBlue tracking-widest text-3xl">ANTON</h1>
         </div>
         <div className="hidden md:flex items-center">
-          <ul className="flex"></ul>
+          <ul className="flex">
+            {Links.map((item) => (
+              <li key={item.id}>{item.link}</li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>
