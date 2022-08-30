@@ -1,12 +1,5 @@
 import React from "react";
 import PageSection from "./PageSections";
-import {
-  FaAmazon,
-  FaApple,
-  FaFacebook,
-  FaGoogle,
-  FaSnapchatGhost,
-} from "react-icons/fa";
 
 const Customers = () => {
   return (
