@@ -5,6 +5,8 @@ const PageSections = ({ name, title, subtitle, children }) => {
     <div name={name} className="max-w-screen-xl mx-auto h-fit">
       <div className="my-32 mx-8 text-center lg:text-left">
         <h1>{title}</h1>
+        <p>{subtitle}</p>
+        {children}
       </div>
     </div>
   );
