@@ -1,6 +1,7 @@
 import React from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import GradientBtn from "./GradientBtn";
+import { Link } from "react-scroll";
 
 const Navbar = ({ menuShow, setMenuShow }) => {
   const Links = [
@@ -14,7 +15,7 @@ const Navbar = ({ menuShow, setMenuShow }) => {
     },
     {
       id: 3,
-      link: "developer api",
+      link: "developer API",
     },
     {
       id: 4,
@@ -39,7 +40,7 @@ const Navbar = ({ menuShow, setMenuShow }) => {
                   key={id}
                   className="uppercase duration-200 hover:text-thBlue cursor-pointer lg:p-2 xl:p-4"
                 >
-                  {link}
+                  <Link to={link}>{link}</Link>
                 </li>
               ))}
             </ul>
