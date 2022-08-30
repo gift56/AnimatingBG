@@ -4,7 +4,7 @@ import GradientBtn from "./GradientBtn";
 const ContactForm = () => {
   return (
     <div className="p-4 text-left">
-      <form action="" method="POST">
+      <form action="https://getform.io/f/7a546ffc-1ac6-43a7-b84c-487671e52a4f" method="POST">
         <div className="grid lg:grid-cols-2 gap-4 w-full py-2">
           <div className="flex flex-col col-span-2 lg:col-span-1">
             <label className="capitalize text-sm py-2 font-light">Name</label>
