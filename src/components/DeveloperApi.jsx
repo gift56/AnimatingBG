@@ -13,9 +13,17 @@ const DeveloperApi = () => {
           <p className="border-l-4 pl-4 odd:border-thOrange even:border-thBlue">
             Whom madam songs faster get as followed sought many leave.
           </p>
+          <p className="border-l-4 pl-4 odd:border-thOrange even:border-thBlue">
+            Whom madam songs faster get as followed sought many leave.
+          </p>
+          <p className="border-l-4 pl-4 odd:border-thOrange even:border-thBlue">
+            Whom madam songs faster get as followed sought many leave.
+          </p>
+          <p className="border-l-4 pl-4 odd:border-thOrange even:border-thBlue">
+            Whom madam songs faster get as followed sought many leave.
+          </p>
         </div>
-
-        <div></div>
+        <div className="w-full lg:w-1/2 "></div>
       </div>
     </PageSection>
   );
