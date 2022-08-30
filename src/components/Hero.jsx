@@ -39,8 +39,10 @@ const Hero = ({ menuShow }) => {
           is here
         </h1>
         <div className="bg-transparent flex flex-row justify-center items-center">
-          <GradientBtn className="capitalize" title="get anton" />
-          <GradientBtn className="capitalize mx-12" title="products" />
+          <div className="bg-transparent flex flex-col md:flex-row gap-2 justify-center items-center">
+            <GradientBtn className="capitalize" title="get anton" />
+            <GradientBtn className="capitalize mx-12" title="products" />
+          </div>
           {playing ? (
             <FaPauseCircle
               size={30}
