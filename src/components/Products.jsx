@@ -1,6 +1,7 @@
 import React from "react";
 import PageSection from "./PageSections";
 import { FaRocket, FaSatellite, FaRobot, FaMicrochip } from "react-icons/fa";
+import { products } from "../../utils/productData";
 
 const Products = () => {
   return (
