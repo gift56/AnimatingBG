@@ -1,7 +1,6 @@
 import React from "react";
 import PageSection from "./PageSections";
-import { FaRocket, FaSatellite, FaRobot, FaMicrochip } from "react-icons/fa";
-import { products } from "../../utils/productData";
+import { productData } from "../utils/productData";
 
 const Products = () => {
   return (
@@ -11,7 +10,11 @@ const Products = () => {
       subtitle={`Plainly lamplight whether evermore thereat tell, we or scarce bird spoken he whether on, sinking thy again sent what eyes tinkled his explore these. Within melancholy sad bird not respiterespite..`}
     >
       <div className="grid lg:grid-cols-2 gap-12 text-black">
-
+        {productData.map(({ id, icon, title, subtitle }) => (
+          <div key={id}  className="group bg-gradient-to-r from-thOrange to-thBlue rounded-lg flex flex-col items-center justify-center p-8 text-center">
+            
+          </div>
+        ))}
       </div>
     </PageSection>
   );

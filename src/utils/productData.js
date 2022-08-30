@@ -1,4 +1,6 @@
-export const products = [
+import { FaRocket, FaSatellite, FaRobot, FaMicrochip } from "react-icons/fa";
+
+export const productData = [
     {
       id: 1,
       icon: <FaRocket size={50} className="text-white" />,
@@ -27,4 +29,4 @@ export const products = [
       subtitle:
         "Fact from with my the i, this shadows soul i mien was of bird, raven till mien before by of. The lordly one fancy me not and croaking smiling, but hear lamplight entrance tempest a name i, sitting gave name each the quoth my door his implore. I i nothing.",
     },
-  ];
+];
