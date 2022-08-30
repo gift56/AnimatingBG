@@ -32,8 +32,8 @@ const Hero = ({ menuShow }) => {
           playing ? "bg-transparent" : "bg-black/80"
         } ${menuShow ? "opacity-20" : "opacity-100"}`}
       >
-        <h1 className="text-5xl bg-transparent lg:text-7xl">web 3.0</h1>
-        <h1 className="text-5xl bg-transparent lg:text-7xl capitalize mb-12">
+        <h1 className="text-3xl bg-transparent md:text-7xl">web 3.0</h1>
+        <h1 className="text-3xl bg-transparent md:text-7xl capitalize mb-6 md:mb-12">
           the {` `}
           <span className="bg-transparent text-thBlue font-bold">future</span>{` `}
           is here
