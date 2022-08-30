@@ -11,7 +11,7 @@ const Contact = () => {
       subtitle={`Nevermore outpour hesitating whispered all my demons, marvelled that bird said and meant back entreating dying. Parting the above broken.`}
     >
       <div className="flex flex-col lg:flex-row gap-8 mt-4">
-        <div className="w-full lg:w-1/2 h-full p-4 flex flex-col items-center justify-center rounded-full">
+        <div className="w-full lg:w-1/2 h-full p-4 flex flex-col items-center justify-center">
           <img
             src={contactImg}
             alt="contact us"
