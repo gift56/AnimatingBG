@@ -1,4 +1,5 @@
 import React from "react";
+import GradientBtn from "./GradientBtn";
 
 const ContactForm = () => {
   return (
@@ -38,6 +39,9 @@ const ContactForm = () => {
               rows="10"
               className="border-2 text-gray-900 rounded-lg p-3 flex outline-none focus:border-gray-600 font-medium"
             ></textarea>
+          </div>
+          <div>
+            <GradientBtn />
           </div>
         </div>
       </form>
