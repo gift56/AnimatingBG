@@ -40,7 +40,9 @@ const Navbar = ({ menuShow, setMenuShow }) => {
                   key={id}
                   className="uppercase duration-200 hover:text-thBlue cursor-pointer lg:p-2 xl:p-4"
                 >
-                  <Link to={link}>{link}</Link>
+                  <Link to={link} smooth duration={500}>
+                    {link}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -66,7 +68,9 @@ const Navbar = ({ menuShow, setMenuShow }) => {
               className={`${id === 1 ? "" : "mt-4"} uppercase`}
               onClick={() => setMenuShow((prev) => !prev)}
             >
-              {link}
+              <Link to={link} smooth duration={500}>
+                {link}
+              </Link>
             </li>
           ))}
           <GradientBtn title="get anton" className="mt-10 capitalize" />
