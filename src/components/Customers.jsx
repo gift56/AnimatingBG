@@ -1,5 +1,6 @@
 import React from "react";
 import PageSection from "./PageSections";
+import { facts, companies } from "../utils/customersData";
 
 const Customers = () => {
   return (
@@ -10,10 +11,15 @@ const Customers = () => {
     >
       <>
         <div className="grid lg:grid-cols-4 text-left gap-8 mb-16">
-          <div className="odd:bg-thBlue even:bg-thOrange text-black p-4 rounded-lg">
-            <h1 className="text-3xl font-bold mb-2">Bla</h1>
-            <p>blal</p>
-          </div>
+          {facts.map(({ id, title, subtitle }) => (
+            <div
+              className="odd:bg-thBlue even:bg-thOrange text-black p-4 rounded-lg"
+              key={id}
+            >
+              <h1 className="text-3xl font-bold mb-2">{title}</h1>
+              <p>{subtitle}</p>
+            </div>
+          ))}
         </div>
       </>
     </PageSection>
