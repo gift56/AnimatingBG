@@ -2,6 +2,7 @@ import React from "react";
 import PageSection from "./PageSections";
 import contactImg from "../assets/contactUs.jpg";
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
+import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
@@ -31,7 +32,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="w-full lg:w-1/2 h-full rounded-xl p-4">
-
+          <ContactForm />
         </div>
       </div>
     </PageSection>
