@@ -1,5 +1,6 @@
 import React from "react";
 import PageSection from "./PageSections";
+import CodeImg from "../assets/code.jpg";
 
 const DeveloperApi = () => {
   return (
@@ -23,7 +24,9 @@ const DeveloperApi = () => {
             Whom madam songs faster get as followed sought many leave.
           </p>
         </div>
-        <div className="w-full lg:w-1/2 "></div>
+        <div className="w-full lg:w-1/2 lg:rotate-6 duration-300 hover:rotate-0">
+          <img src={CodeImg} alt="code" />
+        </div>
       </div>
     </PageSection>
   );
