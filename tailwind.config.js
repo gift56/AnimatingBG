@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         thBlue: "#35EEED !important",
         thOrange: "#F9A23F",
-        thPurple: "#ED02FF"
+        thPurple: "#ED02FF",
       },
     },
   },
