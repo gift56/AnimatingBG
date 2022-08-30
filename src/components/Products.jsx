@@ -11,8 +11,15 @@ const Products = () => {
     >
       <div className="grid lg:grid-cols-2 gap-12 text-black">
         {productData.map(({ id, icon, title, subtitle }) => (
-          <div key={id}  className="group bg-gradient-to-r from-thOrange to-thBlue rounded-lg flex flex-col items-center justify-center p-8 text-center">
-            
+          <div
+            key={id}
+            className="group bg-gradient-to-r from-thOrange to-thBlue rounded-lg flex flex-col items-center justify-center p-8 text-center"
+          >
+            <div className="flex items-center justify-center duration-300 group-hover:scale-110 rounded-[100%]">
+              <div className="bg-black rounded-[100%] p-5 m-4">{icon}</div>
+            </div>
+            <h1 className="text-3xl lg:text-5xl my-8 capitalize bg-transparent text-black">{title}</h1>
+            <p className="text-lg bg-transparent text-black">{subtitle}</p>
           </div>
         ))}
       </div>
