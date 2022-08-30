@@ -16,7 +16,7 @@ const Contact = () => {
           <img
             src={contactImg}
             alt="contact us"
-            className="rounded-full object-cover !shadow-lg !shadow-thPurple"
+            className="rounded-full object-cover !shadow-lg !shadow-thPurple w-[90%]"
           />
           <p className="py-12 max-w-md ">
             Off what of no stronger that. Oh help this i tapping is door hear i.
@@ -31,7 +31,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 h-full rounded-xl p-4">
+        <div className="w-full lg:w-1/2 h-full rounded-xl">
           <ContactForm />
         </div>
       </div>
