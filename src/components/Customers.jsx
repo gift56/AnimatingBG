@@ -19,6 +19,7 @@ const Customers = () => {
         <div className="grid lg:grid-cols-4 text-left gap-8 mb-16">
           <div className="odd:bg-thBlue even:bg-thOrange text-black p-4 rounded-lg">
             <h1 className="text-3xl font-bold mb-2">Bla</h1>
+            <p>blal</p>
           </div>
         </div>
       </>
