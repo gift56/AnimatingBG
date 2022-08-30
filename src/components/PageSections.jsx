@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const PageSections = () => {
-  return (
-    <div>PageSections</div>
-  )
-}
+const PageSections = ({ name, title, subtitle, children }) => {
+  return <div>PageSections</div>;
+};
 
-export default PageSections
+export default PageSections;
