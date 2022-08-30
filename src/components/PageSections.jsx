@@ -1,9 +1,9 @@
 import React from "react";
 
-const PageSections = ({ name, title, subtitle, children }) => {
+const PageSection = ({ name, title, subtitle, children }) => {
   return (
     <div name={name} className="max-w-screen-xl mx-auto h-fit">
-      <div className="my-32 mx-8 text-center lg:text-left">
+      <div className="my-32 mx-8 d-flex flex-col gap-4 items-center lg:items-start">
         <h1 className="text-5xl">{title}</h1>
         <p className="mt-8 mb-16">{subtitle}</p>
         {children}
@@ -12,4 +12,4 @@ const PageSections = ({ name, title, subtitle, children }) => {
   );
 };
 
-export default PageSections;
+export default PageSection;

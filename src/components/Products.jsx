@@ -1,8 +1,11 @@
 import React from 'react'
+import PageSection from './PageSections'
 
 const Products = () => {
   return (
-    <div>Products</div>
+    <PageSection name="products" title="Products">
+
+    </PageSection>
   )
 }
 
