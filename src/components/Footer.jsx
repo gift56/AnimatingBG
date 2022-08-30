@@ -12,7 +12,7 @@ const Footer = () => {
               <ul className="mt-1">
                 {subMenu.map(({ id, title, link }) => (
                   <li key={id}>
-                    <a href={link}>{title}</a>
+                    <a href={link} target="_blank" rel="noopener noreferrer">{title}</a>
                   </li>
                 ))}
               </ul>
