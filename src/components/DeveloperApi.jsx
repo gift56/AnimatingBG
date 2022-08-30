@@ -10,7 +10,9 @@ const DeveloperApi = () => {
     >
       <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
         <div className="flex flex-col gap-4 w-full lg:w-1/2 p-8 bg-gray-900 rounded-lg">
-          <p>Whom madam songs faster get as followed sought many leave.</p>
+          <p className="border-l-4 pl-4 odd:border-thOrange even:border-thBlue">
+            Whom madam songs faster get as followed sought many leave.
+          </p>
         </div>
 
         <div></div>
