@@ -13,7 +13,7 @@ const Products = () => {
         {productData.map(({ id, icon, title, subtitle }) => (
           <div
             key={id}
-            className="group bg-gradient-to-r from-thOrange to-thBlue rounded-lg flex flex-col items-center justify-center p-8 text-center"
+            className="group bg-gradient-to-r from-thOrange to-thBlue rounded-lg flex flex-col items-center justify-center p-3 md:p-8 text-center"
           >
             <div className="flex items-center justify-center duration-300 group-hover:scale-110 rounded-[100%]">
               <div className="bg-black rounded-[100%] p-4">{icon}</div>
