@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import PageSection from "./PageSections";
 
 const Contact = () => {
   return (
-    <div>Contact</div>
-  )
-}
+    <PageSection
+      name="contact"
+      title="Contact"
+      subtitle={`Nevermore outpour hesitating whispered all my demons, marvelled that bird said and meant back entreating dying. Parting the above broken.`}
+    ></PageSection>
+  );
+};
 
-export default Contact
+export default Contact;
