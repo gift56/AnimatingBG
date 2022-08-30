@@ -21,6 +21,13 @@ const Customers = () => {
             </div>
           ))}
         </div>
+        <div className="flex flex-col lg:flex-row justify-around items-center gap-6">
+          {companies.map(({ id, icon, title }) => (
+            <div key={id} className="">
+                
+            </div>
+          ))}
+        </div>
       </>
     </PageSection>
   );
