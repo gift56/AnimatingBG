@@ -40,9 +40,9 @@ const ContactForm = () => {
               className="border-2 text-gray-900 rounded-lg p-3 flex outline-none focus:border-gray-600 font-medium"
             ></textarea>
           </div>
-          <div>
-            <GradientBtn />
-          </div>
+        </div>
+        <div className="flex justify-center items-center">
+          <GradientBtn className="ml-4 mt-4 capitalize" title="send message" />
         </div>
       </form>
     </div>
