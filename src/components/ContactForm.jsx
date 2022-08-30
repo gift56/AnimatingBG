@@ -16,9 +16,17 @@ const ContactForm = () => {
           <div className="flex flex-col col-span-2 lg:col-span-1">
             <label className="capitalize text-sm py-2 font-light">Phone</label>
             <input
-              type="phone"
+              type="tel"
               className="border-2 text-gray-900 rounded-lg p-3 flex outline-none focus:border-gray-600 font-medium"
               name="phone"
+            />
+          </div>
+          <div className="flex flex-col col-span-2">
+            <label className="capitalize text-sm py-2 font-light">Email</label>
+            <input
+              type="email"
+              className="border-2 text-gray-900 rounded-lg p-3 flex outline-none focus:border-gray-600 font-medium"
+              name="email"
             />
           </div>
         </div>
