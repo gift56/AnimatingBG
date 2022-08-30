@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Contact from "./components/Contact";
 import Customers from "./components/Customers";
 import DeveloperApi from "./components/DeveloperApi";
 import Hero from "./components/Hero";
@@ -14,6 +15,7 @@ const App = () => {
       <Products />
       <DeveloperApi />
       <Customers />
+      <Contact />
     </div>
   );
 };
