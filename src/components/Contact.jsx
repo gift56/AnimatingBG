@@ -11,13 +11,13 @@ const Contact = () => {
       subtitle={`Nevermore outpour hesitating whispered all my demons, marvelled that bird said and meant back entreating dying. Parting the above broken.`}
     >
       <div className="flex flex-col lg:flex-row gap-8 mt-4">
-        <div className="w-full lg:w-1/2 h-full p-4 flex flex-col items-center justify-center">
+        <div className="w-full lg:w-1/2 h-full p-4 flex flex-col items-center justify-center rounded-full">
           <img
             src={contactImg}
             alt="contact us"
             className="rounded-full object-cover !shadow-lg !shadow-thPurple"
           />
-          <p className="py-12 max-w-md">
+          <p className="py-12 max-w-md ">
             Off what of no stronger that. Oh help this i tapping is door hear i.
             Rare in the i tossed and him has, and hesitating i thy burned into
           </p>
@@ -30,7 +30,9 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div></div>
+        <div className="w-full lg:w-1/2 h-full rounded-xl p-4">
+
+        </div>
       </div>
     </PageSection>
   );
