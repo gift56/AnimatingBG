@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Customers from "./components/Customers";
 import DeveloperApi from "./components/DeveloperApi";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -12,6 +13,7 @@ const App = () => {
       <Hero menuShow={menuShow} />
       <Products />
       <DeveloperApi />
+      <Customers />
     </div>
   );
 };
