@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaRocket } from "react-icons/fa";
 import GradientBtn from "./GradientBtn";
 import { Link } from "react-scroll";
 
@@ -31,7 +31,10 @@ const Navbar = ({ menuShow, setMenuShow }) => {
       <div className="absolute w-full h-24 bg-black text-white z-20">
         <div className="flex justify-between items-center max-w-screen-xl mx-auto px-4 h-full">
           <div>
-            <h1 className="text-thBlue tracking-widest text-3xl">ANTON</h1>
+            <h1 className="text-thBlue tracking-widest text-3xl flex items-center gap-2 cursor-pointer select-none">
+              <FaRocket />
+              STAREX
+            </h1>
           </div>
           <div className="hidden lg:flex items-center">
             <ul className="flex">
