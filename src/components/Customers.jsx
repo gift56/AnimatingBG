@@ -29,15 +29,21 @@ const Customers = () => {
                 color === "green"
                   ? "hover:text-green-500"
                   : color === "blue"
-                  ? "hover:text-blue-400"
+                  ? "hover:text-white"
                   : color === "black"
                   ? "hover:text-gray-500"
                   : color === "gold"
-                  ? "hover:text-gold-200"
+                  ? "hover:text-[#ffa02f]"
                   : "hover:text-yellow-300"
               }`}
             >
-              <span>{icon}</span>
+              <span
+                className={
+                  color === "blue" ? "hover:bg-blue-400 rounded-[50%]" : "text-inherit"
+                }
+              >
+                {icon}
+              </span>
               <p className={`ml-2 text-white`}>{title}</p>
             </div>
           ))}
