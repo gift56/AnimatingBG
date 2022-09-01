@@ -25,10 +25,20 @@ const Customers = () => {
           {companies.map(({ id, icon, title, color }) => (
             <div
               key={id}
-              className="flex items-center p-4 capitalize rounded-lg cursor-pointer"
+              className={`flex items-center p-4 capitalize rounded-lg cursor-pointer ${
+                color === "green"
+                  ? "hover:text-green-500"
+                  : color === "blue"
+                  ? "hover:text-blue-400"
+                  : color === "black"
+                  ? "hover:text-gray-500"
+                  : color === "gold"
+                  ? "hover:text-gold-200"
+                  : "hover:text-yellow-300"
+              }`}
             >
-              <span className={`hover:text-blue-400`}>{icon}</span>
-              <p className="ml-2">{title}</p>
+              <span>{icon}</span>
+              <p className={`ml-2 text-white`}>{title}</p>
             </div>
           ))}
         </div>

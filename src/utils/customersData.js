@@ -58,6 +58,6 @@ export const companies = [
     id: 5,
     icon: <FaSnapchatGhost size={25} />,
     title: "snapchat",
-    color: "black"
+    color: "yellow"
   },
 ];
