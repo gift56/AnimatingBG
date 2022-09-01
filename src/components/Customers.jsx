@@ -22,12 +22,12 @@ const Customers = () => {
           ))}
         </div>
         <div className="flex flex-col lg:flex-row justify-between items-center gap-6 w-full">
-          {companies.map(({ id, icon, title }) => (
+          {companies.map(({ id, icon, title, color }) => (
             <div
               key={id}
-              className="flex items-center p-4 capitalize rounded-lg"
+              className="flex items-center p-4 capitalize rounded-lg cursor-pointer"
             >
-              <span>{icon}</span>
+              <span className={`hover:text-blue-400`}>{icon}</span>
               <p className="ml-2">{title}</p>
             </div>
           ))}

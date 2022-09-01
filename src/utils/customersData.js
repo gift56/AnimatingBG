@@ -34,25 +34,30 @@ export const companies = [
     id: 1,
     icon: <FaGoogle size={25} />,
     title: "google",
+    color: "green"
   },
   {
     id: 2,
     icon: <FaFacebook size={25} />,
     title: "facebook",
+    color: "blue"
   },
   {
     id: 3,
     icon: <FaAmazon size={25} />,
     title: "amazon",
+    color: "gold"
   },
   {
     id: 4,
     icon: <FaApple size={25} />,
     title: "apple",
+    color: "black"
   },
   {
     id: 5,
     icon: <FaSnapchatGhost size={25} />,
     title: "snapchat",
+    color: "black"
   },
 ];
